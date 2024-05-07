@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "../../utils/axios";
 import requests from "../../utils/requests";
+import { FaPlay } from "react-icons/fa";
+import { IoMdInformationCircleOutline } from "react-icons/io";
 import "./banner.css"
 
 const Banner = () => {
@@ -9,7 +11,7 @@ const Banner = () => {
         (async () => {
             try {
                 const request = await axios.get(requests.fetchNetflixOriginals)
-                console.log(request)
+                console.log("req", request)
                 setMovie(request.data.results[
                     Math.floor(Math.random() * request.data.results.length)
                 ]);
@@ -18,7 +20,7 @@ const Banner = () => {
             }
         })()
     }, []);
-    function trunate(str, n) {
+    function truncate(str, n) {
         return str?.length > n ? str.substr(0, n - 1) + '...' : str;
     }
     return (
@@ -32,13 +34,13 @@ const Banner = () => {
         >
             <div className="banner_contents">
                 <h1 className="banner_title">
-                    {movie.title || movie?.name || movie?.original_name}
+                    {movie?.title || movie?.name || movie?.original_name}
                 </h1>
-                <div className="banner_button">
-                    <button className="banner_button play"> play</button>
-                    <button className="banner_button">My List</button>
+                <div className="banner_button-wrapper">
+                    <button className="banner_button play"><FaPlay /> <span> play</span></button>
+                    <button className="banner_button"><IoMdInformationCircleOutline /><span> My List </span></button>
                 </div>
-                <h1 className="banner_description">{trunate(movie?.overview, 150)}</h1>
+                <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
             </div>
             <div className="banner_fadeBottom" />
         </div>

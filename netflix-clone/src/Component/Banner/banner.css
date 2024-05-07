@@ -12,10 +12,11 @@
   /* height:190px; */
 }
 
-.banner_list {
+.banner_title {
   font-size: 3rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
+  margin-bottom: 10px;
 }
 
 .banner_description {
@@ -27,7 +28,13 @@
   height: 80px;
 }
 
-.banner_button {
+.banner_button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner_button-wrapper button {
+  display: flex;
   cursor: pointer;
   color: #fff;
   outline: none;
@@ -38,9 +45,14 @@
   padding: 1rem 3rem;
   margin-right: 2rem;
   background-color: rgba(51, 51, 51, 0.5);
+  text-transform: capitalize;
 }
 
-.play {
+.banner_button-wrapper button svg {
+  margin-right: 10px;
+}
+
+.banner_button-wrapper button.play {
   color: #000;
   background-color: #fff;
 }
