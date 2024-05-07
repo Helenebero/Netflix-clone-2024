@@ -10,6 +10,8 @@
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
+  scrollbar-color: black grey;
+  scrollbar-width: thin;
   padding: 20px;
 }
 
