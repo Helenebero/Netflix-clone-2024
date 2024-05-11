@@ -41,3 +41,7 @@
   cursor: pointer;
   /* background-color: lightgreen; */
 }
+
+.header_container ul li a {
+  color: #fff;
+}
