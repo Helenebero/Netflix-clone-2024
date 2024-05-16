@@ -9,10 +9,10 @@
 .row_posters {
   display: flex;
   overflow-y: hidden;
-  overflow-x: scroll;
-  scrollbar-color: black grey;
-  scrollbar-width: thin;
-  padding: 20px;
+  /* overflow-x: scroll; */
+  /* scrollbar-color: black grey; */
+  /* scrollbar-width: thin; */
+  /* padding: 20px; */
 }
 
 .row_posters::-webkit-scrollbar {

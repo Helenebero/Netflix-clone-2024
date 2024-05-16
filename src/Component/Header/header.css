@@ -13,6 +13,10 @@
   transition-timing-function: ease-in;
   z-index: 1;
   /* background-color: red; */
+
+}
+.header-outer-container  a {text-decoration: nonenpm ;
+
 }
 .nav-black {
   background-color: rgb(20, 20, 20);
@@ -44,4 +48,5 @@
 
 .header_container ul li a {
   color: #fff;
+  text-decoration: none;
 }

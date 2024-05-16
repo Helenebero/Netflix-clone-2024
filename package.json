@@ -1,6 +1,6 @@
 {
-  "homepage": "https://Helenebero.github.io/Netflix-clone-2024",
-  "name": "netflix-clone",
+  
+  "name": "net",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,9 +25,7 @@
     "web-vitals": "^3.5.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+    "start": "react-scripts start",		
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
